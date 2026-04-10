@@ -5,7 +5,7 @@ import (
 	"errors"
 	"math/rand"
 
-	"github.com/tx7do/kratos-authn/engine"
+	"github.com/52dev/kratos-authn/engine"
 )
 
 type Authenticator struct {

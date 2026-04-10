@@ -1,20 +1,20 @@
-module github.com/tx7do/kratos-authn/middleware
+module github.com/52dev/kratos-authn/middleware
 
 go 1.24.0
 
 toolchain go1.24.3
 
 replace (
-	github.com/tx7do/kratos-authn => ../
-	github.com/tx7do/kratos-authn/engine/jwt => ../engine/jwt
+	github.com/52dev/kratos-authn => ../
+	github.com/52dev/kratos-authn/engine/jwt => ../engine/jwt
 )
 
 require (
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/golang-jwt/jwt/v5 v5.3.0
 	github.com/stretchr/testify v1.11.1
-	github.com/tx7do/kratos-authn v1.1.9
-	github.com/tx7do/kratos-authn/engine/jwt v1.1.9
+	github.com/52dev/kratos-authn v1.1.9
+	github.com/52dev/kratos-authn/engine/jwt v1.1.9
 )
 
 require (

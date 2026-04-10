@@ -6,7 +6,7 @@ import (
 
 	jwtV5 "github.com/golang-jwt/jwt/v5"
 
-	"github.com/tx7do/kratos-authn/engine"
+	"github.com/52dev/kratos-authn/engine"
 )
 
 var _ engine.Authenticator = (*Authenticator)(nil)

@@ -1,15 +1,15 @@
-module github.com/tx7do/kratos-authn/engine/presharedkey
+module github.com/52dev/kratos-authn/engine/presharedkey
 
 go 1.24.0
 
 toolchain go1.24.3
 
-replace github.com/tx7do/kratos-authn => ../../
+replace github.com/52dev/kratos-authn => ../../
 
 require (
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/stretchr/testify v1.11.1
-	github.com/tx7do/kratos-authn v1.1.9
+	github.com/52dev/kratos-authn v1.1.9
 )
 
 require (

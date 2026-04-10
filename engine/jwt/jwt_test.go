@@ -10,7 +10,7 @@ import (
 	"github.com/go-kratos/kratos/v2/transport"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tx7do/kratos-authn/engine"
+	"github.com/52dev/kratos-authn/engine"
 )
 
 type headerCarrier http.Header

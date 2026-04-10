@@ -1,4 +1,4 @@
-module github.com/tx7do/kratos-authn/engine/jwt
+module github.com/52dev/kratos-authn/engine/jwt
 
 go 1.24.0
 
@@ -8,7 +8,7 @@ require (
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/golang-jwt/jwt/v5 v5.3.0
 	github.com/stretchr/testify v1.11.1
-	github.com/tx7do/kratos-authn v1.1.9
+	github.com/52dev/kratos-authn v1.1.9
 )
 
 require (
@@ -23,4 +23,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/tx7do/kratos-authn => ../../
+replace github.com/52dev/kratos-authn => ../../

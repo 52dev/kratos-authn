@@ -1,4 +1,4 @@
-module github.com/tx7do/kratos-authn
+module github.com/52dev/kratos-authn
 
 go 1.24.0
 

@@ -14,7 +14,7 @@ import (
 
 	"github.com/hashicorp/go-retryablehttp"
 
-	"github.com/tx7do/kratos-authn/engine"
+	"github.com/52dev/kratos-authn/engine"
 )
 
 //var (

@@ -3,7 +3,7 @@ package noop
 import (
 	"context"
 
-	"github.com/tx7do/kratos-authn/engine"
+	"github.com/52dev/kratos-authn/engine"
 )
 
 type Authenticator struct{}

@@ -3,7 +3,7 @@ package middleware
 import (
 	"context"
 
-	"github.com/tx7do/kratos-authn/engine"
+	"github.com/52dev/kratos-authn/engine"
 )
 
 func NewContext(ctx context.Context, claims *engine.AuthClaims) context.Context {

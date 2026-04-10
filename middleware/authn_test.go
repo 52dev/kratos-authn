@@ -13,8 +13,8 @@ import (
 	"github.com/go-kratos/kratos/v2/errors"
 	"github.com/go-kratos/kratos/v2/transport"
 
-	"github.com/tx7do/kratos-authn/engine"
-	"github.com/tx7do/kratos-authn/engine/jwt"
+	"github.com/52dev/kratos-authn/engine"
+	"github.com/52dev/kratos-authn/engine/jwt"
 )
 
 type headerCarrier http.Header

@@ -12,7 +12,7 @@ import (
 	"encoding/base64"
 	"encoding/json"
 
-	"github.com/tx7do/kratos-authn/engine"
+	"github.com/52dev/kratos-authn/engine"
 )
 
 // IDToken is an OpenID Connect extension that provides a predictable representation
