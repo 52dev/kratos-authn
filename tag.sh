@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 BASE_DIR=$(pwd)
-VERSION="v1.0.1"
+VERSION="v1.0.2"
 
 # 强制创建/覆盖根标签
 echo "=== Force create root tag: ${VERSION} ==="
