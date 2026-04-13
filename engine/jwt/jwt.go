@@ -126,9 +126,17 @@ func (a *Authenticator) generateToken(jwtToken *jwtV5.Token) (string, error) {
 		return "", engine.ErrMissingKeyFunc
 	}
 
-	key, err := a.options.keyFunc(jwtToken)
-	if err != nil {
-		return "", engine.ErrGetKeyFailed
+	var key interface{}
+	// 如果是 RSA 签名，优先用 private key
+	if a.options.privateKey != nil {
+		key = a.options.privateKey
+	} else {
+		// 原来的 HMAC 逻辑
+		var err error
+		key, err = a.options.keyFunc(jwtToken)
+		if err != nil {
+			return "", engine.ErrGetKeyFailed
+		}
 	}
 
 	strToken, err := jwtToken.SignedString(key)
