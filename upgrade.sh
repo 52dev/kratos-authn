@@ -1,21 +1,21 @@
 #!/bin/bash
 set -e
 BASE_DIR=$(pwd)
-VERSION="v1.0.0"
 
 # 根目录执行
 echo "=== Tidy root directory ==="
 go mod tidy
 
-# 遍历所有一级子目录
-echo -e "\n=== Tidy submodules ==="
-for dir in */; do
-    if [ -f "${dir}go.mod" ]; then
-        mod_name=$(basename "${dir}")
-        echo "Processing: ${mod_name}"
-        cd "${dir}" && go mod tidy
-        cd "${BASE_DIR}"
-    fi
+# 递归查找 1~3 层内所有 go.mod，自动执行 go mod tidy
+echo -e "\n=== Tidy all submodules (1~3 levels) ==="
+find . -maxdepth 3 -type f -name "go.mod" | grep -v '^\./go.mod$' | sort | while read -r modfile; do
+    moddir=$(dirname "${modfile}")
+    echo "====================================="
+    echo "Processing: ${moddir}"
+    cd "${moddir}"
+    go mod tidy
+    cd "${BASE_DIR}"
 done
 
-echo -e "\n✅ All modules tidy finished!"
+echo -e "\n====================================="
+echo -e "✅ All modules tidy finished!"

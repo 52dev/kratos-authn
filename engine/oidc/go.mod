@@ -5,12 +5,12 @@ go 1.24.0
 toolchain go1.24.3
 
 require (
+	github.com/52dev/kratos-authn v1.0.1
 	github.com/MicahParks/keyfunc/v3 v3.7.0
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/golang-jwt/jwt/v5 v5.3.0
 	github.com/hashicorp/go-retryablehttp v0.7.8
 	github.com/stretchr/testify v1.11.1
-	github.com/52dev/kratos-authn v1.0.0
 )
 
 require (

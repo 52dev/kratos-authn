@@ -10,11 +10,11 @@ replace (
 )
 
 require (
+	github.com/52dev/kratos-authn v1.0.1
+	github.com/52dev/kratos-authn/engine/jwt v1.0.1
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/golang-jwt/jwt/v5 v5.3.0
 	github.com/stretchr/testify v1.11.1
-	github.com/52dev/kratos-authn v1.0.0
-	github.com/52dev/kratos-authn/engine/jwt v1.0.0
 )
 
 require (
